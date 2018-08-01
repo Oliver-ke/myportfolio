@@ -3,6 +3,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../../media/images/background.jpg);
 $profile-img: url(../../media/images/profile.jpg);
+$profile-img-md: url(../../media/images/profile-md.jpg);
 $background-opacity: 0.6;
 
 @mixin easeOut {
@@ -37,5 +38,34 @@ $background-opacity: 0.6;
             }
         }
     }
+}
+//Media query Mixins
 
+// small screen
+@mixin  mediaSm {
+    @media screen and(max-width: 500px){
+        @content;
+    } 
+}
+
+
+//medium screen
+@mixin  mediaMd {
+    @media screen and(max-width: 768px){
+        @content;
+    } 
+}
+
+// large screen
+@mixin  mediaLg {
+    @media screen and(min-width: 769px)and (max-width:1170px){
+        @content;
+    } 
+}
+
+//extra large screen
+@mixin  mediaXl {
+    @media screen and(max-width: 1171px){
+        @content;
+    } 
 }
