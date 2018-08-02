@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../../media/images/background.jpg);
+$home-image: url(../../media/images/content-management.jpg);
 $profile-img: url(../../media/images/profile.jpg);
 $profile-img-md: url(../../media/images/profile-md.jpg);
 $background-opacity: 0.6;
@@ -39,8 +39,19 @@ $background-opacity: 0.6;
         }
     }
 }
-//Media query Mixins
+// set text color
+// note diff between function and mixin
+//function returns something and mixins dont, they just perform
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}
 
+//Media query Mixins
 // small screen
 @mixin  mediaSm {
     @media screen and(max-width: 500px){
