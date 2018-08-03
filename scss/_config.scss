@@ -1,9 +1,9 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../../media/images/content-management.jpg);
-$profile-img: url(../../media/images/profile.jpg);
-$profile-img-md: url(../../media/images/profile-md.jpg);
+$home-image: url(../media/images/content-management.jpg);
+$profile-img: url(../media/images/profile.jpg);
+$profile-img-md: url(../media/images/profile-md.jpg);
 $background-opacity: 0.6;
 
 @mixin easeOut {
