@@ -121,6 +121,15 @@ main{
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        text-align: center;
+        h6{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-color;
+        }
     }
 }
 // work/projects
