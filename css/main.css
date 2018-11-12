@@ -180,7 +180,14 @@ main {
   .about-info .job {
     background: #1f393b;
     padding: 0.5rem;
-    border-bottom: #fdbc35 5px solid; }
+    border-bottom: #fdbc35 5px solid;
+    text-align: center; }
+    .about-info .job h6 {
+      font-size: 16px; }
+    .about-info .job h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fdbc35; }
 
 .projects {
   display: grid;
